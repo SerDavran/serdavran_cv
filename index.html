@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - CV</title>
+  <title>Serafim Davranis</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -14,29 +14,45 @@
       color: #333;
     }
 
+    .content {
+      margin-top: 50px;
+    }
+
     .container {
-      display: flex;
-      flex-wrap: wrap;
       width: 90%;
       max-width: 1000px;
       margin: 20px auto;
       background-color: #fff;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .sidebar {
-      background-color: #333;
-      color: #fff;
       padding: 20px;
-      width: 100%;
       box-sizing: border-box;
     }
 
-    .content {
-      padding: 20px;
-      width: 100%;
-      box-sizing: border-box;
+    .profile-image {
+      width: 150px;
+      /* Adjust the size as needed */
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      float: left;
+      margin-right: 20px;
     }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .badge {
+      background-color: #e0e0e0;
+      color: #333;
+      padding: 5px 10px;
+      border-radius: 12px;
+      font-size: 0.9em;
+      display: inline-block;
+    }
+
 
     h1,
     h2 {
@@ -74,53 +90,56 @@
     }
 
     .contact-info a {
-      color: #fff;
+      color: #333;
       text-decoration: none;
-    }
-
-    @media(min-width: 768px) {
-      .container {
-        flex-wrap: nowrap;
-      }
-
-      .sidebar {
-        width: 30%;
-      }
-
-      .content {
-        width: 70%;
-      }
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <div class="sidebar">
-      <h1>Your Name</h1>
+    <section>
+      <img src="images/profile.jpg" alt="Serafeim Ntavranis" class="profile-image">
+      <h1>Serafim Davranis</h1>
       <div class="contact-info">
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <p>Phone: (123) 456-7890</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
-        </p>
+        <p>Email: <a href="mailto:serafimntavranis@gmail.com">serafimntavranis@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/serdavran/"
+            target="_blank">https://www.linkedin.com/in/serdavran/</a></p>
       </div>
-    </div>
-    <div class="content">
-      <section>
-        <h2>Profile</h2>
-        <p>A brief summary about yourself, your career goals, and what you bring to the table.</p>
-      </section>
+    </section>
 
+    <div class="content">
       <section>
         <h2>Experience</h2>
         <ul>
           <li>
-            <strong>Job Title</strong> - Company Name (Year - Year)
-            <p>Describe your role and responsibilities. Highlight any significant achievements or projects.</p>
+            <strong>SENIOR BACKEND SOFTWARE ENGINEER</strong> - Dialectica (2022 - Present)
+            <p>Part of a team working on a micro service system using
+              Hanami framework (ruby) with synchronous and
+              asynchronous communication</p>
           </li>
           <li>
-            <strong>Job Title</strong> - Company Name (Year - Year)
-            <p>Describe your role and responsibilities. Highlight any significant achievements or projects.</p>
+            <strong>BACKEND SOFTWARE ENGINEER</strong> - BETA CAE (2019 - 2022)
+            <p>Part of a team working on a custom web application,
+              using Ruby on Rails and React.js</p>
+          </li>
+          <li>
+            <strong>FULL STACK WEB DEVELOPER</strong> - Dataverse (2018 - 2019)
+            <p>As part of a team working on a custom web application,
+              using C# and Angular.js</p>
+          </li>
+          <li>
+            <strong>FULL STACK WEB DEVELOPER</strong> - Fedenet (2017 - 2018)
+            <p>Part of a team that builds websites and e-shops with
+              plain PHP, javascript and MySQL. Working on a custom
+              CMS built with plain PHP.</p>
+          </li>
+          <li>
+            <strong>JUNIOR WEB DEVELOPER</strong> - Albatec (2014 - 2016)
+            <p>Training in Ruby and Ruby on Rails language, in markup
+              language HTML, CSS, Javascript and JQuery library,
+              MySQL. Development of company’s website. Training in
+              Linux/Unix systems and servers. Domain registration.</p>
           </li>
         </ul>
       </section>
@@ -129,19 +148,49 @@
         <h2>Education</h2>
         <ul>
           <li>
-            <strong>Degree</strong> - Institution Name (Year - Year)
-            <p>Include any relevant coursework or honors.</p>
+            <strong>Computer Science - Information technology</strong> - University of Macedonia (2011 - 2016)
           </li>
         </ul>
       </section>
 
       <section>
         <h2>Skills</h2>
+        <div class="skills">
+          <span class="badge">Micro services</span>
+          <span class="badge">Ruby</span>
+          <span class="badge">C#</span>
+          <span class="badge">.NET</span>
+          <span class="badge">PHP</span>
+          <span class="badge">MySql</span>
+          <span class="badge">Rabbitmq</span>
+          <span class="badge">Unit testing</span>
+          <span class="badge">GraphQL</span>
+          <span class="badge">Redis</span>
+          <span class="badge">Graphana</span>
+          <span class="badge">Docker</span>
+          <span class="badge">Git</span>
+          <span class="badge">CI/CD</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Languages</h2>
         <ul>
-          <li>Skill 1</li>
-          <li>Skill 2</li>
-          <li>Skill 3</li>
+          <li>Greek - Native or Bilingual Proﬁciency</li>
+          <li>English - Professional Working
+            Proﬁciency</li>
         </ul>
+      </section>
+
+      <section>
+        <h2>Interests</h2>
+        <div class="skills">
+          <span class="badge">Brazilian Jiu-Jitsu</span>
+          <span class="badge">Swimming</span>
+          <span class="badge">CrossFit</span>
+          <span class="badge">Cooking</span>
+          <span class="badge">Video games</span>
+        </div>
       </section>
     </div>
   </div>
